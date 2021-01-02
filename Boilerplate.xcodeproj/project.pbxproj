@@ -15,6 +15,9 @@
 		4F99287625A0668A00BA1C46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F99287425A0668A00BA1C46 /* LaunchScreen.storyboard */; };
 		4F99288125A0668A00BA1C46 /* BoilerplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F99288025A0668A00BA1C46 /* BoilerplateTests.swift */; };
 		4F99288C25A0668A00BA1C46 /* BoilerplateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F99288B25A0668A00BA1C46 /* BoilerplateUITests.swift */; };
+		4F9928A225A0E3C800BA1C46 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9928A125A0E3C800BA1C46 /* Coordinator.swift */; };
+		4F9928A725A0E60200BA1C46 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9928A625A0E60200BA1C46 /* AppCoordinator.swift */; };
+		4F9928AC25A0E75100BA1C46 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9928AB25A0E75100BA1C46 /* Storyboarded.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		4F99288725A0668A00BA1C46 /* BoilerplateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoilerplateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F99288B25A0668A00BA1C46 /* BoilerplateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoilerplateUITests.swift; sourceTree = "<group>"; };
 		4F99288D25A0668A00BA1C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F9928A125A0E3C800BA1C46 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		4F9928A625A0E60200BA1C46 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		4F9928AB25A0E75100BA1C46 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,11 @@
 		4F99286825A0668800BA1C46 /* Boilerplate */ = {
 			isa = PBXGroup;
 			children = (
+				4F9928A025A0DE6800BA1C46 /* Common */,
+				4F99289F25A0DE5D00BA1C46 /* Models */,
+				4F99289E25A0DE4F00BA1C46 /* Views */,
+				4F99289D25A0DE4200BA1C46 /* ViewModels */,
+				4F99289C25A0DE2700BA1C46 /* Coordinators */,
 				4F99286925A0668800BA1C46 /* AppDelegate.swift */,
 				4F99286B25A0668800BA1C46 /* SceneDelegate.swift */,
 				4F99286D25A0668800BA1C46 /* ViewController.swift */,
@@ -126,6 +137,44 @@
 				4F99288D25A0668A00BA1C46 /* Info.plist */,
 			);
 			path = BoilerplateUITests;
+			sourceTree = "<group>";
+		};
+		4F99289C25A0DE2700BA1C46 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				4F9928A125A0E3C800BA1C46 /* Coordinator.swift */,
+				4F9928A625A0E60200BA1C46 /* AppCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		4F99289D25A0DE4200BA1C46 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4F99289E25A0DE4F00BA1C46 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4F9928AB25A0E75100BA1C46 /* Storyboarded.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4F99289F25A0DE5D00BA1C46 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4F9928A025A0DE6800BA1C46 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +307,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F9928A225A0E3C800BA1C46 /* Coordinator.swift in Sources */,
 				4F99286E25A0668800BA1C46 /* ViewController.swift in Sources */,
+				4F9928A725A0E60200BA1C46 /* AppCoordinator.swift in Sources */,
 				4F99286A25A0668800BA1C46 /* AppDelegate.swift in Sources */,
 				4F99286C25A0668800BA1C46 /* SceneDelegate.swift in Sources */,
+				4F9928AC25A0E75100BA1C46 /* Storyboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
