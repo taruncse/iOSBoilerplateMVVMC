@@ -11,5 +11,6 @@ import UIKit
 protocol Coordinator {
     var childCoordinators: [Coordinator] { set get }
     var navigationController : UINavigationController { set get }
+    var window : UIWindow { set get }
     func start()
 }
