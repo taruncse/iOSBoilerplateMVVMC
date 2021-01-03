@@ -33,7 +33,11 @@ class AppCoordinator: Coordinator {
     }
 }
 
-extension AppCoordinator {
+extension AppCoordinator : LoginCoordinatorDelegate {
+    func didLoginFinished() {
+        
+    }
+    
     func showLogin() {
         let loginCoordinator = LoginCoordinator(navigationController: navigationController, window: window)
         loginCoordinator.start()
