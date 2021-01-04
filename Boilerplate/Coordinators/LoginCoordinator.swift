@@ -14,8 +14,10 @@ protocol LoginCoordinatorDelegate {
 
 class LoginCoordinator: Coordinator {
     
-    var childCoordinators = [Coordinator]()
+    var delegate : LoginCoordinatorDelegate?
     
+    var childCoordinators = [String : Coordinator]()
+
     var navigationController: UINavigationController
     var window: UIWindow
     
@@ -30,9 +32,15 @@ class LoginCoordinator: Coordinator {
         let loginVC = LoginViewController.instantiate()
         let loginViewModel = LoginVM()
         loginViewModel.dataModel = LoginModel()
+        loginViewModel.coordinatorDelegate = self
         loginVC.viewModel = loginViewModel
         window.rootViewController = loginVC
         //self.navigationController.pushViewController(loginVC, animated: true)
     }
-    
+}
+
+extension LoginCoordinator : LoginViewModelCoordinatorDelegate {
+    func loginDidFinished(viewModel: LoginViewModel) {
+        self.delegate?.didLoginFinished()
+    }
 }

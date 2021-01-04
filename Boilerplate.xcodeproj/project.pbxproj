@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F10981225A2C830006ABF13 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F10981125A2C830006ABF13 /* DemoViewController.swift */; };
 		4F97735625A18466006606C7 /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F97735525A18466006606C7 /* LoginVM.swift */; };
 		4F97735F25A184C7006606C7 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F97735E25A184C7006606C7 /* LoginViewModel.swift */; };
 		4F97736425A18535006606C7 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F97736325A18535006606C7 /* LoginModel.swift */; };
@@ -26,6 +27,8 @@
 		4F9928AC25A0E75100BA1C46 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9928AB25A0E75100BA1C46 /* Storyboarded.swift */; };
 		4F9928B425A0F04800BA1C46 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9928B325A0F04800BA1C46 /* LoginCoordinator.swift */; };
 		4FE4E22825A1AD2000CA8FD7 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE4E22725A1AD2000CA8FD7 /* Common.swift */; };
+		4FE4E22D25A1BE0900CA8FD7 /* BaseTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE4E22C25A1BE0900CA8FD7 /* BaseTabViewController.swift */; };
+		4FE4E23325A2312200CA8FD7 /* TabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE4E23225A2312200CA8FD7 /* TabCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F10981125A2C830006ABF13 /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 		4F97735525A18466006606C7 /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
 		4F97735E25A184C7006606C7 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		4F97736325A18535006606C7 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
@@ -71,6 +75,8 @@
 		4F9928AB25A0E75100BA1C46 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		4F9928B325A0F04800BA1C46 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		4FE4E22725A1AD2000CA8FD7 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		4FE4E22C25A1BE0900CA8FD7 /* BaseTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabViewController.swift; sourceTree = "<group>"; };
+		4FE4E23225A2312200CA8FD7 /* TabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +198,7 @@
 				4F9928A125A0E3C800BA1C46 /* Coordinator.swift */,
 				4F9928A625A0E60200BA1C46 /* AppCoordinator.swift */,
 				4F9928B325A0F04800BA1C46 /* LoginCoordinator.swift */,
+				4FE4E23225A2312200CA8FD7 /* TabCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -211,6 +218,8 @@
 				4F9928AB25A0E75100BA1C46 /* Storyboarded.swift */,
 				4F99286D25A0668800BA1C46 /* LoginViewController.swift */,
 				4F99286F25A0668800BA1C46 /* Main.storyboard */,
+				4FE4E22C25A1BE0900CA8FD7 /* BaseTabViewController.swift */,
+				4F10981125A2C830006ABF13 /* DemoViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -363,6 +372,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F10981225A2C830006ABF13 /* DemoViewController.swift in Sources */,
+				4FE4E22D25A1BE0900CA8FD7 /* BaseTabViewController.swift in Sources */,
 				4F9928A225A0E3C800BA1C46 /* Coordinator.swift in Sources */,
 				4F99286E25A0668800BA1C46 /* LoginViewController.swift in Sources */,
 				4F9928B425A0F04800BA1C46 /* LoginCoordinator.swift in Sources */,
@@ -372,6 +383,7 @@
 				4FE4E22825A1AD2000CA8FD7 /* Common.swift in Sources */,
 				4F97736425A18535006606C7 /* LoginModel.swift in Sources */,
 				4F99286C25A0668800BA1C46 /* SceneDelegate.swift in Sources */,
+				4FE4E23325A2312200CA8FD7 /* TabCoordinator.swift in Sources */,
 				4F9928AC25A0E75100BA1C46 /* Storyboarded.swift in Sources */,
 				4F97736A25A1868F006606C7 /* LoginDataModel.swift in Sources */,
 				4F97738225A18D84006606C7 /* LoginModelGuide.swift in Sources */,

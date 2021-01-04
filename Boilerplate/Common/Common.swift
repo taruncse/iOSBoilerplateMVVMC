@@ -8,6 +8,11 @@
 import Foundation
 
 struct Common {
+    
+    static let KEY_APP_COORDINATOR = "AppCoordinator"
+    static let KEY_LOGIN_COORDINATOR = "LoginCoordinator"
+    static let KEY_TAB_COORDINATOR = "TabCoordinator"
+
     static func isValidateEmailFormat(_ email: String) -> Bool
     {
         /*let REGEX: String
