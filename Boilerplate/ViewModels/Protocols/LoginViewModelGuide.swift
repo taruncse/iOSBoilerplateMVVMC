@@ -8,16 +8,16 @@
 import Foundation
 
 protocol LoginViewModelViewDelegate {
-    func loginModelChanged (viewModel : LoginViewModel, canSumbit : Bool)
-    func loginStatus (viewModel : LoginViewModel, message : String, isSuccessFull : Bool)
+    func loginModelChanged (viewModel : LoginViewModelGuide, canSumbit : Bool)
+    func loginStatus (viewModel : LoginViewModelGuide, message : String, isSuccessFull : Bool)
 
 }
 protocol LoginViewModelCoordinatorDelegate {
-    func loginDidFinished (viewModel : LoginViewModel)
+    func loginDidFinished (viewModel : LoginViewModelGuide)
 }
-protocol LoginViewModel {
+protocol LoginViewModelGuide {
     var dataModel : LoginModelGuide? { set get }
-    var data : LoginDataGuide? { set get }
+    var data : LoginDataModelGuide? { set get }
     
     var viewDelegate : LoginViewModelViewDelegate? { set get }
     var coordinatorDelegate : LoginViewModelCoordinatorDelegate? { set get }

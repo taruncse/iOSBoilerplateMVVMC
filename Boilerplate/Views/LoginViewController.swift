@@ -15,7 +15,7 @@ class LoginViewController: UIViewController, Storyboarded , UITextFieldDelegate,
     
     fileprivate var isLoaded : Bool = false
     
-    var viewModel : LoginViewModel? {
+    var viewModel : LoginViewModelGuide? {
         willSet {
             viewModel?.viewDelegate = nil
         }
@@ -70,7 +70,7 @@ class LoginViewController: UIViewController, Storyboarded , UITextFieldDelegate,
 }
 
 extension LoginViewController : LoginViewModelViewDelegate {
-    func loginModelChanged(viewModel: LoginViewModel, canSumbit : Bool) {
+    func loginModelChanged(viewModel: LoginViewModelGuide, canSumbit : Bool) {
         if canSumbit {
             self.loinBtn.isEnabled = true
         }else {
@@ -78,7 +78,7 @@ extension LoginViewController : LoginViewModelViewDelegate {
         }
     }
     
-    func loginStatus(viewModel: LoginViewModel, message: String, isSuccessFull : Bool) {
+    func loginStatus(viewModel: LoginViewModelGuide, message: String, isSuccessFull : Bool) {
         if isSuccessFull {
             self.loginStatusLbl.textColor = .green
         } else {

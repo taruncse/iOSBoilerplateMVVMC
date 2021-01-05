@@ -75,37 +75,67 @@
             </objects>
             <point key="canvasLocation" x="-204.34782608695653" y="50.892857142857139"/>
         </scene>
-        <!--Demo View Controller-->
-        <scene sceneID="u2m-0j-qvG">
+        <!--To Do View Controller-->
+        <scene sceneID="RVx-2s-aeO">
             <objects>
-                <viewController storyboardIdentifier="DemoViewController" id="uzU-wu-L6h" customClass="DemoViewController" customModule="Boilerplate" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="nka-3e-tzJ">
+                <tableViewController storyboardIdentifier="ToDoViewController" id="wDn-ea-dWV" customClass="ToDoViewController" customModule="Boilerplate" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="M99-M8-bXf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urO-YG-GGv">
-                                <rect key="frame" x="184" y="433" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="i8R-5L-X7f"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
-                        <constraints>
-                            <constraint firstItem="urO-YG-GGv" firstAttribute="leading" secondItem="i8R-5L-X7f" secondAttribute="leading" constant="184" id="72a-JZ-cA3"/>
-                            <constraint firstItem="i8R-5L-X7f" firstAttribute="bottom" secondItem="urO-YG-GGv" secondAttribute="bottom" constant="399" id="Gu1-gU-On0"/>
-                            <constraint firstItem="urO-YG-GGv" firstAttribute="top" secondItem="i8R-5L-X7f" secondAttribute="top" constant="389" id="g3T-Vm-Cln"/>
-                            <constraint firstItem="i8R-5L-X7f" firstAttribute="trailing" secondItem="urO-YG-GGv" secondAttribute="trailing" constant="184" id="gmq-Jw-1xJ"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1lx-Cn-fcj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskTableViewCell" rowHeight="90" id="5kR-8z-j8Q" customClass="TaskTableViewCell" customModule="Boilerplate" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5kR-8z-j8Q" id="SxW-jB-VZg">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="yET-vF-hbH">
+                                            <rect key="frame" x="30" y="16" width="354" height="58"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4KH-bu-2vQ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="354" height="26.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dv0-C1-MOd">
+                                                    <rect key="frame" x="0.0" y="31.5" width="354" height="26.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="yET-vF-hbH" firstAttribute="leading" secondItem="SxW-jB-VZg" secondAttribute="leadingMargin" constant="10" id="2cN-lj-7o0"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="yET-vF-hbH" secondAttribute="bottom" constant="5" id="9oA-Ke-D7T"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="yET-vF-hbH" secondAttribute="trailing" constant="10" id="DJG-St-nbL"/>
+                                        <constraint firstItem="yET-vF-hbH" firstAttribute="top" secondItem="SxW-jB-VZg" secondAttribute="topMargin" constant="5" id="aQa-I1-BBd"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLbl" destination="dv0-C1-MOd" id="x5w-2l-ioV"/>
+                                    <outlet property="titleLbl" destination="4KH-bu-2vQ" id="1Ff-Pn-Hm0"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="wDn-ea-dWV" id="QX7-fy-Z3w"/>
+                            <outlet property="delegate" destination="wDn-ea-dWV" id="sDT-QF-vhB"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uv4-eh-RUW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="478" y="53"/>
+            <point key="canvasLocation" x="566.66666666666674" y="50.892857142857139"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

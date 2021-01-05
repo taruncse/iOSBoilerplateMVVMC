@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 protocol LoginCoordinatorDelegate {
-    func didLoginFinished()
+    func didLoginFinished(email : String)
 }
 
 class LoginCoordinator: Coordinator {
@@ -30,7 +30,7 @@ class LoginCoordinator: Coordinator {
     
     func start() {
         let loginVC = LoginViewController.instantiate()
-        let loginViewModel = LoginVM()
+        let loginViewModel = LoginViewModel()
         loginViewModel.dataModel = LoginModel()
         loginViewModel.coordinatorDelegate = self
         loginVC.viewModel = loginViewModel
@@ -40,7 +40,7 @@ class LoginCoordinator: Coordinator {
 }
 
 extension LoginCoordinator : LoginViewModelCoordinatorDelegate {
-    func loginDidFinished(viewModel: LoginViewModel) {
-        self.delegate?.didLoginFinished()
+    func loginDidFinished(viewModel: LoginViewModelGuide) {
+        self.delegate?.didLoginFinished(email: viewModel.email)
     }
 }

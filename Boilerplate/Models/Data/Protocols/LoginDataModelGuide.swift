@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol LoginDataGuide {
+protocol LoginDataModelGuide {
     var email : String { get set}
     var password : String { get set}
 }

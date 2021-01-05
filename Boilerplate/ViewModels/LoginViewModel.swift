@@ -7,11 +7,11 @@
 
 import Foundation
 
-class LoginVM: LoginViewModel {
+class LoginViewModel: LoginViewModelGuide {
     
     var dataModel: LoginModelGuide?
     
-    var data: LoginDataGuide?
+    var data: LoginDataModelGuide?
     
     var viewDelegate: LoginViewModelViewDelegate?
     

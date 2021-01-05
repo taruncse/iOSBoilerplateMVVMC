@@ -18,6 +18,10 @@ class AppCoordinator: Coordinator {
         return false
     }
     
+    fileprivate var userEmail : String {
+        return "t@g.com"
+    }
+    
     init(navigationController : UINavigationController, window: UIWindow) {
         self.navigationController = navigationController
         self.window = window
@@ -25,7 +29,7 @@ class AppCoordinator: Coordinator {
     
     func start() {
         if isLogin {
-           showTabbar()
+           showTabbar(userEmail)
         } else {
             showLogin()
         }
@@ -33,9 +37,9 @@ class AppCoordinator: Coordinator {
 }
 
 extension AppCoordinator : LoginCoordinatorDelegate {
-    func didLoginFinished() {
+    func didLoginFinished(email : String) {
         childCoordinators.removeValue(forKey: Common.KEY_LOGIN_COORDINATOR)
-       showTabbar()
+        showTabbar(email)
     }
     
     func showLogin() {
@@ -44,6 +48,7 @@ extension AppCoordinator : LoginCoordinatorDelegate {
         childCoordinators[Common.KEY_APP_COORDINATOR] = loginCoordinator
         loginCoordinator.start()
     }
+    
 }
 
 extension AppCoordinator: TabCoordinatorDelegate {
@@ -51,8 +56,8 @@ extension AppCoordinator: TabCoordinatorDelegate {
         childCoordinators.removeValue(forKey: Common.KEY_TAB_COORDINATOR)
     }
     
-    func showTabbar() {
-        let tabbarCoordinator = TabCoordinator(window, navigationController)
+    func showTabbar(_ email : String) {
+        let tabbarCoordinator = TabCoordinator(window, navigationController, email: email)
         tabbarCoordinator.delegate = self
         childCoordinators[Common.KEY_TAB_COORDINATOR] = tabbarCoordinator
         tabbarCoordinator.start()

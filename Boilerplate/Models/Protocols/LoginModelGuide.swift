@@ -8,5 +8,5 @@
 import Foundation
 
 protocol LoginModelGuide {
-    func isUserValid(user:LoginDataGuide, completion: @escaping(_ isValid: Bool) -> Void)
+    func isUserValid(user:LoginDataModelGuide, completion: @escaping(_ isValid: Bool) -> Void)
 }

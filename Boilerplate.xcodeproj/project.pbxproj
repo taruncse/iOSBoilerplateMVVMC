@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4F10981225A2C830006ABF13 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F10981125A2C830006ABF13 /* DemoViewController.swift */; };
-		4F97735625A18466006606C7 /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F97735525A18466006606C7 /* LoginVM.swift */; };
-		4F97735F25A184C7006606C7 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F97735E25A184C7006606C7 /* LoginViewModel.swift */; };
+		4F10981225A2C830006ABF13 /* ToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F10981125A2C830006ABF13 /* ToDoViewController.swift */; };
+		4F10981B25A38347006ABF13 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F10981A25A38347006ABF13 /* TaskTableViewCell.swift */; };
+		4F10982325A38A47006ABF13 /* ToDoDataModelGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F10982225A38A47006ABF13 /* ToDoDataModelGuide.swift */; };
+		4F10982825A38AF3006ABF13 /* ToDoDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F10982725A38AF3006ABF13 /* ToDoDataModel.swift */; };
+		4F10982D25A38B4F006ABF13 /* ToDoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F10982C25A38B4F006ABF13 /* ToDoModel.swift */; };
+		4F10983225A38B71006ABF13 /* ToDoModelGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F10983125A38B71006ABF13 /* ToDoModelGuide.swift */; };
+		4F97735625A18466006606C7 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F97735525A18466006606C7 /* LoginViewModel.swift */; };
+		4F97735F25A184C7006606C7 /* LoginViewModelGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F97735E25A184C7006606C7 /* LoginViewModelGuide.swift */; };
 		4F97736425A18535006606C7 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F97736325A18535006606C7 /* LoginModel.swift */; };
 		4F97736A25A1868F006606C7 /* LoginDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F97736925A1868F006606C7 /* LoginDataModel.swift */; };
-		4F97737625A18B53006606C7 /* LoginDataGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F97737525A18B53006606C7 /* LoginDataGuide.swift */; };
+		4F97737625A18B53006606C7 /* LoginDataModelGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F97737525A18B53006606C7 /* LoginDataModelGuide.swift */; };
 		4F97738225A18D84006606C7 /* LoginModelGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F97738125A18D84006606C7 /* LoginModelGuide.swift */; };
 		4F99286A25A0668800BA1C46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F99286925A0668800BA1C46 /* AppDelegate.swift */; };
 		4F99286C25A0668800BA1C46 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F99286B25A0668800BA1C46 /* SceneDelegate.swift */; };
@@ -26,6 +31,8 @@
 		4F9928A725A0E60200BA1C46 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9928A625A0E60200BA1C46 /* AppCoordinator.swift */; };
 		4F9928AC25A0E75100BA1C46 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9928AB25A0E75100BA1C46 /* Storyboarded.swift */; };
 		4F9928B425A0F04800BA1C46 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9928B325A0F04800BA1C46 /* LoginCoordinator.swift */; };
+		4FB7361725A42A5C00208009 /* ToDoViewModelGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB7361625A42A5C00208009 /* ToDoViewModelGuide.swift */; };
+		4FB7362525A42E6000208009 /* ToDoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB7362425A42E6000208009 /* ToDoViewModel.swift */; };
 		4FE4E22825A1AD2000CA8FD7 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE4E22725A1AD2000CA8FD7 /* Common.swift */; };
 		4FE4E22D25A1BE0900CA8FD7 /* BaseTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE4E22C25A1BE0900CA8FD7 /* BaseTabViewController.swift */; };
 		4FE4E23325A2312200CA8FD7 /* TabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE4E23225A2312200CA8FD7 /* TabCoordinator.swift */; };
@@ -49,12 +56,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4F10981125A2C830006ABF13 /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
-		4F97735525A18466006606C7 /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
-		4F97735E25A184C7006606C7 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		4F10981125A2C830006ABF13 /* ToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewController.swift; sourceTree = "<group>"; };
+		4F10981A25A38347006ABF13 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		4F10982225A38A47006ABF13 /* ToDoDataModelGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoDataModelGuide.swift; sourceTree = "<group>"; };
+		4F10982725A38AF3006ABF13 /* ToDoDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoDataModel.swift; sourceTree = "<group>"; };
+		4F10982C25A38B4F006ABF13 /* ToDoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoModel.swift; sourceTree = "<group>"; };
+		4F10983125A38B71006ABF13 /* ToDoModelGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoModelGuide.swift; sourceTree = "<group>"; };
+		4F97735525A18466006606C7 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		4F97735E25A184C7006606C7 /* LoginViewModelGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelGuide.swift; sourceTree = "<group>"; };
 		4F97736325A18535006606C7 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		4F97736925A1868F006606C7 /* LoginDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataModel.swift; sourceTree = "<group>"; };
-		4F97737525A18B53006606C7 /* LoginDataGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataGuide.swift; sourceTree = "<group>"; };
+		4F97737525A18B53006606C7 /* LoginDataModelGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataModelGuide.swift; sourceTree = "<group>"; };
 		4F97738125A18D84006606C7 /* LoginModelGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModelGuide.swift; sourceTree = "<group>"; };
 		4F99286625A0668800BA1C46 /* Boilerplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Boilerplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F99286925A0668800BA1C46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +86,8 @@
 		4F9928A625A0E60200BA1C46 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		4F9928AB25A0E75100BA1C46 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		4F9928B325A0F04800BA1C46 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		4FB7361625A42A5C00208009 /* ToDoViewModelGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewModelGuide.swift; sourceTree = "<group>"; };
+		4FB7362425A42E6000208009 /* ToDoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewModel.swift; sourceTree = "<group>"; };
 		4FE4E22725A1AD2000CA8FD7 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		4FE4E22C25A1BE0900CA8FD7 /* BaseTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabViewController.swift; sourceTree = "<group>"; };
 		4FE4E23225A2312200CA8FD7 /* TabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCoordinator.swift; sourceTree = "<group>"; };
@@ -104,10 +118,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F10981925A382E9006ABF13 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4F10981A25A38347006ABF13 /* TaskTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		4F97735A25A1848F006606C7 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				4F97735E25A184C7006606C7 /* LoginViewModel.swift */,
+				4F97735E25A184C7006606C7 /* LoginViewModelGuide.swift */,
+				4FB7361625A42A5C00208009 /* ToDoViewModelGuide.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -116,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				4F97738125A18D84006606C7 /* LoginModelGuide.swift */,
+				4F10983125A38B71006ABF13 /* ToDoModelGuide.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -125,6 +149,7 @@
 			children = (
 				4F97737D25A18B8C006606C7 /* Protocols */,
 				4F97736925A1868F006606C7 /* LoginDataModel.swift */,
+				4F10982725A38AF3006ABF13 /* ToDoDataModel.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -132,7 +157,8 @@
 		4F97737D25A18B8C006606C7 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				4F97737525A18B53006606C7 /* LoginDataGuide.swift */,
+				4F97737525A18B53006606C7 /* LoginDataModelGuide.swift */,
+				4F10982225A38A47006ABF13 /* ToDoDataModelGuide.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -207,7 +233,8 @@
 			isa = PBXGroup;
 			children = (
 				4F97735A25A1848F006606C7 /* Protocols */,
-				4F97735525A18466006606C7 /* LoginVM.swift */,
+				4F97735525A18466006606C7 /* LoginViewModel.swift */,
+				4FB7362425A42E6000208009 /* ToDoViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -215,11 +242,12 @@
 		4F99289E25A0DE4F00BA1C46 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4F10981925A382E9006ABF13 /* Cells */,
 				4F9928AB25A0E75100BA1C46 /* Storyboarded.swift */,
 				4F99286D25A0668800BA1C46 /* LoginViewController.swift */,
 				4F99286F25A0668800BA1C46 /* Main.storyboard */,
 				4FE4E22C25A1BE0900CA8FD7 /* BaseTabViewController.swift */,
-				4F10981125A2C830006ABF13 /* DemoViewController.swift */,
+				4F10981125A2C830006ABF13 /* ToDoViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -230,6 +258,7 @@
 				4F97737425A1873E006606C7 /* Data */,
 				4F97736825A1864B006606C7 /* Protocols */,
 				4F97736325A18535006606C7 /* LoginModel.swift */,
+				4F10982C25A38B4F006ABF13 /* ToDoModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -372,12 +401,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F10981225A2C830006ABF13 /* DemoViewController.swift in Sources */,
+				4F10981225A2C830006ABF13 /* ToDoViewController.swift in Sources */,
 				4FE4E22D25A1BE0900CA8FD7 /* BaseTabViewController.swift in Sources */,
+				4F10981B25A38347006ABF13 /* TaskTableViewCell.swift in Sources */,
 				4F9928A225A0E3C800BA1C46 /* Coordinator.swift in Sources */,
 				4F99286E25A0668800BA1C46 /* LoginViewController.swift in Sources */,
 				4F9928B425A0F04800BA1C46 /* LoginCoordinator.swift in Sources */,
-				4F97737625A18B53006606C7 /* LoginDataGuide.swift in Sources */,
+				4FB7361725A42A5C00208009 /* ToDoViewModelGuide.swift in Sources */,
+				4F97737625A18B53006606C7 /* LoginDataModelGuide.swift in Sources */,
 				4F9928A725A0E60200BA1C46 /* AppCoordinator.swift in Sources */,
 				4F99286A25A0668800BA1C46 /* AppDelegate.swift in Sources */,
 				4FE4E22825A1AD2000CA8FD7 /* Common.swift in Sources */,
@@ -385,10 +416,15 @@
 				4F99286C25A0668800BA1C46 /* SceneDelegate.swift in Sources */,
 				4FE4E23325A2312200CA8FD7 /* TabCoordinator.swift in Sources */,
 				4F9928AC25A0E75100BA1C46 /* Storyboarded.swift in Sources */,
+				4F10982D25A38B4F006ABF13 /* ToDoModel.swift in Sources */,
+				4FB7362525A42E6000208009 /* ToDoViewModel.swift in Sources */,
 				4F97736A25A1868F006606C7 /* LoginDataModel.swift in Sources */,
 				4F97738225A18D84006606C7 /* LoginModelGuide.swift in Sources */,
-				4F97735625A18466006606C7 /* LoginVM.swift in Sources */,
-				4F97735F25A184C7006606C7 /* LoginViewModel.swift in Sources */,
+				4F97735625A18466006606C7 /* LoginViewModel.swift in Sources */,
+				4F10983225A38B71006ABF13 /* ToDoModelGuide.swift in Sources */,
+				4F97735F25A184C7006606C7 /* LoginViewModelGuide.swift in Sources */,
+				4F10982325A38A47006ABF13 /* ToDoDataModelGuide.swift in Sources */,
+				4F10982825A38AF3006ABF13 /* ToDoDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

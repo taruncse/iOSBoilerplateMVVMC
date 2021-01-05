@@ -7,7 +7,7 @@
 
 import Foundation
 
-class LoginDataModel: LoginDataGuide {
+class LoginDataModel: LoginDataModelGuide {
     
     var email: String
     var password: String

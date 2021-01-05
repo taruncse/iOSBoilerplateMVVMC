@@ -8,7 +8,7 @@
 import Foundation
 // TODO add Login logic or API call here
 class LoginModel: LoginModelGuide{
-    func isUserValid(user: LoginDataGuide, completion: @escaping (Bool) -> Void) {
+    func isUserValid(user: LoginDataModelGuide, completion: @escaping (Bool) -> Void) {
         DispatchQueue.global().async {
             completion(true)
         }

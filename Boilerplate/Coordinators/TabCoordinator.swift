@@ -23,9 +23,12 @@ class TabCoordinator: NSObject, Coordinator {
     
     let tabBar = UITabBarController()
     
-    init(_ window : UIWindow, _ navigationController: UINavigationController) {
+    let userEmail : String
+    
+    init(_ window : UIWindow, _ navigationController: UINavigationController, email : String) {
         self.window = window
         self.navigationController = navigationController
+        self.userEmail = email
     }
     
     func start() {
@@ -43,7 +46,14 @@ extension TabCoordinator {
         
         let vc1 = UINavigationController(rootViewController: FirstViewController())
         vc1.title = "First"
-        let vc2 = UINavigationController(rootViewController:DemoViewController.instantiate())
+        
+        let todoViewController = ToDoViewController.instantiate()
+        let todoViewModel = ToDoViewModel(email: userEmail)
+        todoViewModel.todoModel = ToDoModel()
+        todoViewModel.coordinatorDelegate = self
+        todoViewController.viewModel = todoViewModel
+        
+        let vc2 = UINavigationController(rootViewController:todoViewController)
         vc2.title = "Second"
         let vc3 = UINavigationController(rootViewController:ThirdViewController())
         vc3.title = "Third"
@@ -71,15 +81,16 @@ extension TabCoordinator {
     }
 }
 
-/*extension TabCoordinator : UITabBarControllerDelegate {
-    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
-        print("Hi")
-    }
-}*/
 extension TabCoordinator: UITabBarControllerDelegate {
     func tabBarController(_ tabBarController: UITabBarController,
                           didSelect viewController: UIViewController) {
         // Some implementation
         print("didSelect")
+    }
+}
+
+extension TabCoordinator : ToDoViewModelCoordinatorDelegate {
+    func listViewModelDidSelectedData(viewModel: ToDoViewModelGuide, data: ToDoDataModelGuide) {
+        
     }
 }
