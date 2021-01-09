@@ -9,11 +9,11 @@ import Foundation
 
 protocol LoginViewModelViewDelegate : class {
     func loginModelChanged (viewModel : LoginViewModelGuide, canSumbit : Bool)
-    func loginStatus (viewModel : LoginViewModelGuide, message : String, isSuccessFull : Bool)
+    func loginStatus (viewModel : LoginViewModelGuide?, message : String, isSuccessFull : Bool)
 
 }
 protocol LoginViewModelCoordinatorDelegate : class {
-    func loginDidFinished (viewModel : LoginViewModelGuide)
+    func loginDidFinished (viewModel : LoginViewModelGuide?)
 }
 protocol LoginViewModelGuide : class {
     var dataModel : LoginModelGuide? { set get }

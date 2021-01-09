@@ -61,14 +61,14 @@ class LoginViewModel: LoginViewModelGuide {
             return
         }
         
-        dataModel?.isUserValid(user: userData, completion: {(isLogedIn) in
+        dataModel?.isUserValid(user: userData, completion: {[weak self] (isLogedIn) in
             DispatchQueue.main.async {
                 var loginMessage = "Invalid Email or Password"
                 if isLogedIn {
                     loginMessage = "LoggedIn Successfuly"
-                    self.coordinatorDelegate?.loginDidFinished(viewModel: self)
+                    self?.coordinatorDelegate?.loginDidFinished(viewModel: self)
                 }
-                self.viewDelegate?.loginStatus(viewModel: self, message: loginMessage, isSuccessFull: isLogedIn)
+                self?.viewDelegate?.loginStatus(viewModel: self, message: loginMessage, isSuccessFull: isLogedIn)
             }
         })
     }

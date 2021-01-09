@@ -78,7 +78,7 @@ extension LoginViewController : LoginViewModelViewDelegate {
         }
     }
     
-    func loginStatus(viewModel: LoginViewModelGuide, message: String, isSuccessFull : Bool) {
+    func loginStatus(viewModel: LoginViewModelGuide?, message: String, isSuccessFull : Bool) {
         if isSuccessFull {
             self.loginStatusLbl.textColor = .green
         } else {

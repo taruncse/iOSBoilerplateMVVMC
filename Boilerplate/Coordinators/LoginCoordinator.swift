@@ -40,7 +40,9 @@ class LoginCoordinator: Coordinator {
 }
 
 extension LoginCoordinator : LoginViewModelCoordinatorDelegate {
-    func loginDidFinished(viewModel: LoginViewModelGuide) {
-        self.delegate?.didLoginFinished(email: viewModel.email)
+    func loginDidFinished(viewModel: LoginViewModelGuide?) {
+        if let viewModel = viewModel {
+            self.delegate?.didLoginFinished(email: viewModel.email)
+        }
     }
 }

@@ -9,8 +9,8 @@ import UIKit
 
 class TaskTableViewCell: UITableViewCell {
 
-    @IBOutlet var titleLbl: UILabel!
-    @IBOutlet var descriptionLbl: UILabel!
+    @IBOutlet weak var titleLbl: UILabel!
+    @IBOutlet weak var descriptionLbl: UILabel!
     
     var todo : ToDoDataModelGuide? {
         didSet {
