@@ -9,9 +9,9 @@ import Foundation
 
 class ToDoViewModel: ToDoViewModelGuide {
     
-    var viewDelegate: ToDoViewModelViewDelegate?
+    weak var viewDelegate: ToDoViewModelViewDelegate?
     
-    var coordinatorDelegate: ToDoViewModelCoordinatorDelegate?
+    weak var coordinatorDelegate: ToDoViewModelCoordinatorDelegate?
     
     var email : String
     

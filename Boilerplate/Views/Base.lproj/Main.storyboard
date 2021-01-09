@@ -132,6 +132,53 @@
             </objects>
             <point key="canvasLocation" x="566.66666666666674" y="50.892857142857139"/>
         </scene>
+        <!--To Do Details View Controller-->
+        <scene sceneID="SvS-vH-LrI">
+            <objects>
+                <viewController storyboardIdentifier="ToDoDetailsViewController" id="ycI-mA-HaC" customClass="ToDoDetailsViewController" customModule="Boilerplate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iEg-Ks-XRn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="m1s-s1-CPm">
+                                <rect key="frame" x="20" y="144" width="374" height="618"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OmB-f7-5Je">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="nFp-FO-3KU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXW-Lz-2O2">
+                                        <rect key="frame" x="0.0" y="70" width="374" height="548"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XbU-Kf-On8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="m1s-s1-CPm" firstAttribute="top" secondItem="XbU-Kf-On8" secondAttribute="top" constant="100" id="cAK-6y-tYn"/>
+                            <constraint firstItem="XbU-Kf-On8" firstAttribute="trailing" secondItem="m1s-s1-CPm" secondAttribute="trailing" constant="20" id="cok-DM-eEw"/>
+                            <constraint firstItem="m1s-s1-CPm" firstAttribute="leading" secondItem="XbU-Kf-On8" secondAttribute="leading" constant="20" id="lDn-ls-2zb"/>
+                            <constraint firstItem="XbU-Kf-On8" firstAttribute="bottom" secondItem="m1s-s1-CPm" secondAttribute="bottom" constant="100" id="sFU-cC-WVN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLbl" destination="VXW-Lz-2O2" id="2Y1-Yj-xko"/>
+                        <outlet property="titleTbl" destination="OmB-f7-5Je" id="Jnr-E7-mbF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gGc-sR-RoX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1234.7826086956522" y="50.892857142857139"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">

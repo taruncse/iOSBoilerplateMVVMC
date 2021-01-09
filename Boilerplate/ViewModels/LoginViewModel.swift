@@ -13,9 +13,9 @@ class LoginViewModel: LoginViewModelGuide {
     
     var data: LoginDataModelGuide?
     
-    var viewDelegate: LoginViewModelViewDelegate?
+    weak var viewDelegate: LoginViewModelViewDelegate?
     
-    var coordinatorDelegate: LoginViewModelCoordinatorDelegate?
+    weak var coordinatorDelegate: LoginViewModelCoordinatorDelegate?
     
     fileprivate var emailIsValidFormat : Bool = false
     fileprivate var passwordIsValidFormat : Bool = false

@@ -11,11 +11,11 @@ protocol ToDoViewModelViewDelegate: class {
     func itemsDidChange(viewModel: ToDoViewModelGuide)
 }
 
-protocol ToDoViewModelCoordinatorDelegate {
+protocol ToDoViewModelCoordinatorDelegate : class {
     func listViewModelDidSelectedData( viewModel: ToDoViewModelGuide, data: ToDoDataModelGuide)
 }
 
-protocol ToDoViewModelGuide {
+protocol ToDoViewModelGuide : class {
     var todoModel : ToDoModelGuide? { get set}
     var viewDelegate : ToDoViewModelViewDelegate? { get set}
     var coordinatorDelegate : ToDoViewModelCoordinatorDelegate? { get set}

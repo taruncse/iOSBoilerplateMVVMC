@@ -7,15 +7,15 @@
 
 import Foundation
 
-protocol LoginViewModelViewDelegate {
+protocol LoginViewModelViewDelegate : class {
     func loginModelChanged (viewModel : LoginViewModelGuide, canSumbit : Bool)
     func loginStatus (viewModel : LoginViewModelGuide, message : String, isSuccessFull : Bool)
 
 }
-protocol LoginViewModelCoordinatorDelegate {
+protocol LoginViewModelCoordinatorDelegate : class {
     func loginDidFinished (viewModel : LoginViewModelGuide)
 }
-protocol LoginViewModelGuide {
+protocol LoginViewModelGuide : class {
     var dataModel : LoginModelGuide? { set get }
     var data : LoginDataModelGuide? { set get }
     
