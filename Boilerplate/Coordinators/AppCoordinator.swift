@@ -45,7 +45,7 @@ extension AppCoordinator : LoginCoordinatorDelegate {
     func showLogin() {
         let loginCoordinator = LoginCoordinator(navigationController: navigationController, window: window)
         loginCoordinator.delegate = self
-        childCoordinators[Common.KEY_APP_COORDINATOR] = loginCoordinator
+        childCoordinators[Common.KEY_LOGIN_COORDINATOR] = loginCoordinator
         loginCoordinator.start()
     }
     
